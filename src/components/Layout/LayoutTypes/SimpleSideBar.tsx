@@ -28,14 +28,15 @@ function SideBar() {
     if (item.subMenu && item.subMenu.length > 0) {
       links = item.subMenu.map(i => ({
         label: i.title,
-        link: i.path
+        link: i.path,
+        key: i.path
       }));
       return (
         <LinksGroup key={index} icon={item.icon} label={item.title} links={links}/>
       );
     } else {
       return (
-        <AuthorityCheck userAuthority={userAuthority ? userAuthority : []} authority={item.authority}>
+        <AuthorityCheck key={index} userAuthority={userAuthority ? userAuthority : []} authority={item.authority}>
           <Link
             className={classes.link}
             data-active={item.path.split('/')[1] === active ? 'true' : undefined}
