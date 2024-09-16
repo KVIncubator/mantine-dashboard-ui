@@ -2436,15 +2436,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/modals@npm:^7.7.1":
-  version: 7.7.1
-  resolution: "@mantine/modals@npm:7.7.1"
+"@mantine/modals@npm:^7.12.2":
+  version: 7.12.2
+  resolution: "@mantine/modals@npm:7.12.2"
   peerDependencies:
-    "@mantine/core": 7.7.1
-    "@mantine/hooks": 7.7.1
+    "@mantine/core": 7.12.2
+    "@mantine/hooks": 7.12.2
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 10c0/f83a33eabdcb102eedc776947e2ce73a45f881c3c2f51611712e3162e683b665ebe2415983436fa6930e17463b90fe53a235873e060fbd6fdbee5864d33cbae1
+  checksum: 10c0/ba7ac174a98914a0f091af3d8e538ea93307e73801bfd53337e1344d29d9124eb048252c1ae5e5a27c5e8beb548a29d886dbaf98d9190b337e804e85254807b8
   languageName: node
   linkType: hard
 
@@ -9933,7 +9933,7 @@ __metadata:
     "@mantine/dates": "npm:^7.12.2"
     "@mantine/form": "npm:^7.7.1"
     "@mantine/hooks": "npm:^7.7.1"
-    "@mantine/modals": "npm:^7.7.1"
+    "@mantine/modals": "npm:^7.12.2"
     "@reduxjs/toolkit": "npm:^2.2.7"
     "@storybook/addon-essentials": "npm:^8.0.0"
     "@storybook/addon-interactions": "npm:^8.0.0"
