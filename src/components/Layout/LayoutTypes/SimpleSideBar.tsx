@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import Views from '@/components/Layout/Views';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Group } from '@mantine/core';
+import { useTranslation } from 'react-i18next';
+import Views from '@/components/Layout/Views';
 import navigationConfig from '@/configs/navigation.config';
 import { LinksGroup } from '@/components/Layout/LinksGroup';
 import classes from '@/components/Layout/LayoutTypes/SimpleSideBar.module.css';
-import { Group } from '@mantine/core';
 import SimpleSideBarBottomContent from '@/components/Layout/LayoutTypes/SimpleSideBarBottomContent';
-import { useTranslation } from 'react-i18next';
 import AuthorityCheck from '@/route/AuthorityCheck';
 import { useAppSelector } from '@/store';
 
@@ -32,11 +32,11 @@ function SideBar() {
         key: i.path,
       }));
       return <LinksGroup key={index} icon={item.icon} label={item.title} links={links} />;
-    } else {
+    }
       return (
         <AuthorityCheck
           key={index}
-          userAuthority={userAuthority ? userAuthority : []}
+          userAuthority={userAuthority || []}
           authority={item.authority}
         >
           <Link
@@ -55,14 +55,13 @@ function SideBar() {
           </Link>
         </AuthorityCheck>
       );
-    }
   });
 
   return (
     <nav className={classes.navbar}>
       <div className={classes.navbarMain}>
         <Group className={classes.header} justify="space-between">
-          <img className={classes.logo} alt={'Mantine Logo'} src={'/logo/logo-light-full.svg'} />
+          <img className={classes.logo} alt="Mantine Logo" src="/logo/logo-light-full.svg" />
         </Group>
         {links}
       </div>

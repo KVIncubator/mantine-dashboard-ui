@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Center, Stack } from '@mantine/core';
 import { IconLogout } from '@tabler/icons-react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import classes from './CollapsedSideBar.module.css';
 import navigationConfig from '@/configs/navigation.config';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Views from '@/components/Layout/Views';
 import useAuth from '@/utils/hooks/useAuth';
 import CollapsedSideBarUserPopOver from '@/components/UserPopOver/CollapsedSideBarUserPopOver';
@@ -41,7 +41,7 @@ function CollapsedSideBarContent() {
   }, [location.pathname]);
 
   const links = navigationConfig.map((item) => (
-    <AuthorityCheck userAuthority={userAuthority ? userAuthority : []} authority={item.authority}>
+    <AuthorityCheck userAuthority={userAuthority || []} authority={item.authority}>
       <Link
         className={classes.link}
         data-active={item.path.split('/')[1] === active ? 'true' : undefined}
@@ -61,7 +61,7 @@ function CollapsedSideBarContent() {
   return (
     <nav className={classes.navbar}>
       <Center>
-        <img className={classes.logo} alt={'Mantine Logo'} src={'/logo/logo-light-full.svg'} />
+        <img className={classes.logo} alt="Mantine Logo" src="/logo/logo-light-full.svg" />
       </Center>
       <div className={classes.navbarMain}>
         <Stack justify="center" gap={0}>

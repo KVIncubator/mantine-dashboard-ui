@@ -1,5 +1,5 @@
-import useAuthority from '@/utils/hooks/useAuthority';
 import { ReactNode, CSSProperties } from 'react';
+import useAuthority from '@/utils/hooks/useAuthority';
 
 export interface CommonProps {
   className?: string;

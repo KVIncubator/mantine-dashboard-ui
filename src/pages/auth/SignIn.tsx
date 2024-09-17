@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Paper, TextInput, PasswordInput, Button, Title, Text } from '@mantine/core';
-import classes from './SignIn.module.css';
 import * as yup from 'yup';
 import { useForm, yupResolver } from '@mantine/form';
+import classes from './SignIn.module.css';
 import useAuth from '@/utils/hooks/useAuth';
 
 export default function SignIn() {
@@ -42,11 +42,11 @@ export default function SignIn() {
             </Title>
             <Text ta="center" mt="md" mb={50}>
               To get more information about the template please check the{' '}
-              <a href={'https://github.com/auronvila/mantine-template/wiki'}>documentation</a>
+              <a href="https://github.com/auronvila/mantine-template/wiki">documentation</a>
             </Text>
             <TextInput
               {...form.getInputProps('email')}
-              name={'email'}
+              name="email"
               label="Email address"
               withAsterisk
               placeholder="hello@gmail.com"
@@ -54,13 +54,13 @@ export default function SignIn() {
             />
             <PasswordInput
               {...form.getInputProps('password')}
-              name={'password'}
+              name="password"
               label="Password"
               placeholder="Your password"
               mt="md"
               size="md"
             />
-            <Button loading={loading} type={'submit'} fullWidth mt="xl" size="md">
+            <Button loading={loading} type="submit" fullWidth mt="xl" size="md">
               Login
             </Button>
             {/*<Text ta="center" mt="md">*/}

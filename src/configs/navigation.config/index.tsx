@@ -1,5 +1,5 @@
-import type { NavigationTree } from '@/@types/navigation';
 import { IconDashboard, IconUser } from '@tabler/icons-react';
+import type { NavigationTree } from '@/@types/navigation';
 
 const navigationConfig: NavigationTree[] = [
   {

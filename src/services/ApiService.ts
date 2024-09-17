@@ -1,5 +1,5 @@
-import BaseService from './BaseService';
 import type { AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios';
+import BaseService from './BaseService';
 
 const ApiService = {
   fetchData<TReq, TRes>(config: AxiosRequestConfig<TReq>): Promise<AxiosResponse<TRes>> {

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { UnstyledButton, Tooltip, Title, rem } from '@mantine/core';
+import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import classes from './DeckedSideBar.module.css';
 import SimpleSideBarBottomContent from '@/components/Layout/LayoutTypes/SimpleSideBarBottomContent';
 import navigationConfig from '@/configs/navigation.config';
-import { Link, useLocation } from 'react-router-dom';
 import Views from '@/components/Layout/Views';
-import { useTranslation } from 'react-i18next';
 import AuthorityCheck from '@/route/AuthorityCheck';
 import { useAppSelector } from '@/store';
 
@@ -37,11 +37,11 @@ function DeckedSideBarContent() {
       <div className={classes.wrapper}>
         <div className={classes.aside}>
           <div>
-            <img className={classes.logo} alt={'Mantine Logo'} src={'/logo/logo-light-full.svg'} />
+            <img className={classes.logo} alt="Mantine Logo" src="/logo/logo-light-full.svg" />
           </div>
           {navigationConfig.map((link, index) => (
             <AuthorityCheck
-              userAuthority={userAuthority ? userAuthority : []}
+              userAuthority={userAuthority || []}
               authority={link.authority}
             >
               <Tooltip
@@ -78,10 +78,9 @@ function DeckedSideBarContent() {
                 key={index}
                 style={{ display: link.path.split('/')[1] === activeMainLink ? 'block' : 'none' }}
               >
-                {link.subMenu?.map((submenuItem, subIndex) => {
-                  return (
+                {link.subMenu?.map((submenuItem, subIndex) => (
                     <AuthorityCheck
-                      userAuthority={userAuthority ? userAuthority : []}
+                      userAuthority={userAuthority || []}
                       authority={submenuItem.authority}
                     >
                       <Link
@@ -93,8 +92,7 @@ function DeckedSideBarContent() {
                         {submenuItem.translateKey ? t(submenuItem.translateKey) : submenuItem.title}
                       </Link>
                     </AuthorityCheck>
-                  );
-                })}
+                  ))}
               </div>
             ))}
           </div>

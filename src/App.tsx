@@ -1,11 +1,11 @@
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
-import { theme } from './theme';
-import { Layout } from '@/components/Layout/Layout';
 import { Provider } from 'react-redux';
-import store, { persistor } from '@/store';
 import { PersistGate } from 'redux-persist/integration/react';
 import { BrowserRouter } from 'react-router-dom';
+import { theme } from './theme';
+import { Layout } from '@/components/Layout/Layout';
+import store, { persistor } from '@/store';
 import appConfig from './configs/app.config';
 import { mockServer } from './mock/mock';
 

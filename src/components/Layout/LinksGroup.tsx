@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Group, Box, Collapse, ThemeIcon, Text, UnstyledButton, rem } from '@mantine/core';
 import { IconCalendarStats, IconChevronRight } from '@tabler/icons-react';
-import classes from './LayoutTypes/SimpleSideBar.module.css';
 import { useNavigate } from 'react-router-dom';
+import classes from './LayoutTypes/SimpleSideBar.module.css';
 
 interface LinksGroupProps {
   icon: React.FC<any>;
@@ -22,8 +22,7 @@ export function LinksGroup({ icon: Icon, label, initiallyOpened, links }: LinksG
     setActive(currentPath);
   }, [location.pathname]);
 
-  const items = (hasLinks ? links : []).map((link) => {
-    return (
+  const items = (hasLinks ? links : []).map((link) => (
       <Text<'a'>
         component="a"
         data-active={link.link === active ? 'true' : undefined}
@@ -37,8 +36,7 @@ export function LinksGroup({ icon: Icon, label, initiallyOpened, links }: LinksG
       >
         {link.label}
       </Text>
-    );
-  });
+    ));
 
   return (
     <div style={{ marginBottom: '0.8rem' }}>

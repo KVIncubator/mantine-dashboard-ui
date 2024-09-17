@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import {
   setUser,
   signInSuccess,
@@ -9,7 +10,6 @@ import {
 } from '@/store';
 import appConfig from '@/configs/app.config';
 import { REDIRECT_URL_KEY } from '@/constants/app.constant';
-import { useNavigate } from 'react-router-dom';
 import { SignInCredential, SignUpCredential } from '@/@types/auth';
 import { AuthService } from '@/services/auth/auth.service';
 import useQuery from './useQuery';
@@ -45,14 +45,14 @@ function useAuth() {
       );
       dispatch(
         setUser({
-          fullName: fullName,
-          email: email,
+          fullName,
+          email,
           role: resp.authority,
-          phoneNumber: phoneNumber,
+          phoneNumber,
         })
       );
       const redirectUrl = query.get(REDIRECT_URL_KEY);
-      navigate(redirectUrl ? redirectUrl : appConfig.authenticatedEntryPath);
+      navigate(redirectUrl || appConfig.authenticatedEntryPath);
       return {
         status: 'success',
         message: '',
@@ -89,7 +89,7 @@ function useAuth() {
         name: '',
         role: '',
         email: '',
-        userId: userId,
+        userId,
       })
     );
     dispatch(

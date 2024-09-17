@@ -9,9 +9,7 @@ function useLocale() {
   const locale = useAppSelector((state) => state.locale.currentLang);
 
   useEffect(() => {
-    const formattedLang = locale.replace(/-([a-z])/g, function (g: any) {
-      return g[1].toUpperCase();
-    });
+    const formattedLang = locale.replace(/-([a-z])/g, (g: any) => g[1].toUpperCase());
     if (locale !== i18n.language) {
       i18n.changeLanguage(formattedLang);
     }

@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
-import appConfig from '@/configs/app.config';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import appConfig from '@/configs/app.config';
 import { useAppSelector } from '@/store';
 import { protectedRoutes, publicRoutes } from '@/configs/routes.config';
 import ProtectedRoute from '@/route/ProtectedRoute';
@@ -25,8 +25,7 @@ const AllRoutes = (props: AllRoutesProps) => {
     <Routes>
       <Route path="/" element={<ProtectedRoute />}>
         <Route path="/" element={<Navigate replace to={authenticatedEntryPath} />} />
-        {protectedRoutes.map((route, index) => {
-          return (
+        {protectedRoutes.map((route, index) => (
             <Route
               key={route.key + index}
               path={route.path}
@@ -36,8 +35,7 @@ const AllRoutes = (props: AllRoutesProps) => {
                 </AuthorityGuard>
               }
             />
-          );
-        })}
+          ))}
         <Route path="*" element={<Navigate replace to="/" />} />
       </Route>
       <Route path="/" element={<PublicRoute />}>
@@ -53,12 +51,10 @@ const AllRoutes = (props: AllRoutesProps) => {
   );
 };
 
-const Views = (props: ViewsProps) => {
-  return (
+const Views = (props: ViewsProps) => (
     <Suspense fallback={<LoadingScreen />}>
       <AllRoutes {...props} />
     </Suspense>
   );
-};
 
 export default Views;
