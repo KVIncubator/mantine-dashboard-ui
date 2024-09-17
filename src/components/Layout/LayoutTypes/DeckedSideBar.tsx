@@ -40,10 +40,7 @@ function DeckedSideBarContent() {
             <img className={classes.logo} alt="Mantine Logo" src="/logo/logo-light-full.svg" />
           </div>
           {navigationConfig.map((link, index) => (
-            <AuthorityCheck
-              userAuthority={userAuthority || []}
-              authority={link.authority}
-            >
+            <AuthorityCheck userAuthority={userAuthority || []} authority={link.authority}>
               <Tooltip
                 label={link.translateKey ? t(link.translateKey) : link.title}
                 position="right"
@@ -79,20 +76,20 @@ function DeckedSideBarContent() {
                 style={{ display: link.path.split('/')[1] === activeMainLink ? 'block' : 'none' }}
               >
                 {link.subMenu?.map((submenuItem, subIndex) => (
-                    <AuthorityCheck
-                      userAuthority={userAuthority || []}
-                      authority={submenuItem.authority}
+                  <AuthorityCheck
+                    userAuthority={userAuthority || []}
+                    authority={submenuItem.authority}
+                  >
+                    <Link
+                      to={`${link.path}/${submenuItem.path}`}
+                      className={classes.link}
+                      data-active={`${submenuItem.path}` === activeSubLink || undefined}
+                      key={subIndex}
                     >
-                      <Link
-                        to={`${link.path}/${submenuItem.path}`}
-                        className={classes.link}
-                        data-active={`${submenuItem.path}` === activeSubLink || undefined}
-                        key={subIndex}
-                      >
-                        {submenuItem.translateKey ? t(submenuItem.translateKey) : submenuItem.title}
-                      </Link>
-                    </AuthorityCheck>
-                  ))}
+                      {submenuItem.translateKey ? t(submenuItem.translateKey) : submenuItem.title}
+                    </Link>
+                  </AuthorityCheck>
+                ))}
               </div>
             ))}
           </div>

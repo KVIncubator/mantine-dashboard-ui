@@ -26,16 +26,16 @@ const AllRoutes = (props: AllRoutesProps) => {
       <Route path="/" element={<ProtectedRoute />}>
         <Route path="/" element={<Navigate replace to={authenticatedEntryPath} />} />
         {protectedRoutes.map((route, index) => (
-            <Route
-              key={route.key + index}
-              path={route.path}
-              element={
-                <AuthorityGuard userAuthority={userAuthority} authority={route.authority}>
-                  <AppRoute routeKey={route.key} component={route.component} {...route.authority} />
-                </AuthorityGuard>
-              }
-            />
-          ))}
+          <Route
+            key={route.key + index}
+            path={route.path}
+            element={
+              <AuthorityGuard userAuthority={userAuthority} authority={route.authority}>
+                <AppRoute routeKey={route.key} component={route.component} {...route.authority} />
+              </AuthorityGuard>
+            }
+          />
+        ))}
         <Route path="*" element={<Navigate replace to="/" />} />
       </Route>
       <Route path="/" element={<PublicRoute />}>
@@ -52,9 +52,9 @@ const AllRoutes = (props: AllRoutesProps) => {
 };
 
 const Views = (props: ViewsProps) => (
-    <Suspense fallback={<LoadingScreen />}>
-      <AllRoutes {...props} />
-    </Suspense>
-  );
+  <Suspense fallback={<LoadingScreen />}>
+    <AllRoutes {...props} />
+  </Suspense>
+);
 
 export default Views;

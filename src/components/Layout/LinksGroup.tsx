@@ -23,20 +23,20 @@ export function LinksGroup({ icon: Icon, label, initiallyOpened, links }: LinksG
   }, [location.pathname]);
 
   const items = (hasLinks ? links : []).map((link) => (
-      <Text<'a'>
-        component="a"
-        data-active={link.link === active ? 'true' : undefined}
-        className={classes.link}
-        href={link.link}
-        key={link.label}
-        onClick={(event) => {
-          navigate(link.link);
-          event.preventDefault();
-        }}
-      >
-        {link.label}
-      </Text>
-    ));
+    <Text<'a'>
+      component="a"
+      data-active={link.link === active ? 'true' : undefined}
+      className={classes.link}
+      href={link.link}
+      key={link.label}
+      onClick={(event) => {
+        navigate(link.link);
+        event.preventDefault();
+      }}
+    >
+      {link.label}
+    </Text>
+  ));
 
   return (
     <div style={{ marginBottom: '0.8rem' }}>

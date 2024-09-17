@@ -33,28 +33,24 @@ function SideBar() {
       }));
       return <LinksGroup key={index} icon={item.icon} label={item.title} links={links} />;
     }
-      return (
-        <AuthorityCheck
+    return (
+      <AuthorityCheck key={index} userAuthority={userAuthority || []} authority={item.authority}>
+        <Link
+          className={classes.link}
+          data-active={item.path.split('/')[1] === active ? 'true' : undefined}
+          to={item.path}
           key={index}
-          userAuthority={userAuthority || []}
-          authority={item.authority}
+          onClick={(event) => {
+            event.preventDefault();
+            setActive(item.path.split('/')[1]);
+            navigate(item.path);
+          }}
         >
-          <Link
-            className={classes.link}
-            data-active={item.path.split('/')[1] === active ? 'true' : undefined}
-            to={item.path}
-            key={index}
-            onClick={(event) => {
-              event.preventDefault();
-              setActive(item.path.split('/')[1]);
-              navigate(item.path);
-            }}
-          >
-            <item.icon className={classes.linkIcon} stroke={1.5} />
-            <span>{item.translateKey ? t(item.translateKey) : item.title}</span>
-          </Link>
-        </AuthorityCheck>
-      );
+          <item.icon className={classes.linkIcon} stroke={1.5} />
+          <span>{item.translateKey ? t(item.translateKey) : item.title}</span>
+        </Link>
+      </AuthorityCheck>
+    );
   });
 
   return (
