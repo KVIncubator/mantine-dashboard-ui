@@ -13,5 +13,7 @@ module.exports = {
      '@typescript-eslint/no-shadow': 'off',
      'max-len': ["error", { "code": 300 }],
      'no-console':  'off',
+     'react/jsx-indent' : 'off',
+     'react/jsx-indent-props': 'off'
   },
 };
