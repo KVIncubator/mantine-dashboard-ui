@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import isEmpty from 'lodash/isEmpty';
+import * as lodash from 'lodash';
 
 function useAuthority(userAuthority: string[] = [], authority: string[] = [], emptyCheck = false) {
   const roleMatched = useMemo(
@@ -7,7 +7,11 @@ function useAuthority(userAuthority: string[] = [], authority: string[] = [], em
     [authority, userAuthority]
   );
 
-  if (isEmpty(authority) || isEmpty(userAuthority) || typeof authority === 'undefined') {
+  if (
+    lodash.isEmpty(authority) ||
+    lodash.isEmpty(userAuthority) ||
+    typeof authority === 'undefined'
+  ) {
     return !emptyCheck;
   }
 
