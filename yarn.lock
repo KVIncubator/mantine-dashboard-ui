@@ -897,19 +897,14 @@
     "@storybook/icons" "^1.2.12"
     ts-dedent "^2.0.0"
 
-"@storybook/builder-vite@8.4.1":
-  version "8.4.1"
-  resolved "https://registry.npmjs.org/@storybook/builder-vite/-/builder-vite-8.4.1.tgz"
-  integrity sha512-//v2S+/huVTZB1tqVH7hpGQtEaRUFyhVFuf4Qk+xPuJItE6sgY4z8Iaz5vONTNMUouei867CXQRPQr3gCa3QVQ==
+"@storybook/builder-vite@8.4.2":
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-8.4.2.tgz#50b0830d0981198508bc5b80411ea834c91c11f6"
+  integrity sha512-dO5FB5yH1C6tr/kBHn1frvGwp8Pt0D1apgXWkJ5ITWEUfh6WwOqX2fqsWsqaNwE7gP0qn0XgwCIEkI/4Mj55SA==
   dependencies:
-    "@storybook/csf-plugin" "8.4.1"
+    "@storybook/csf-plugin" "8.4.2"
     browser-assert "^1.2.1"
     ts-dedent "^2.0.0"
-
-"@storybook/components@8.4.1":
-  version "8.4.1"
-  resolved "https://registry.npmjs.org/@storybook/components/-/components-8.4.1.tgz"
-  integrity sha512-bMPclbBhrWxhFlwqrC/h4fPLl05ouoi5D8SkQTHjeVxWN9eDnMVi76xM0YDct302Z3f0x5S3plIulp+4XRxrvg==
 
 "@storybook/components@8.4.2", "@storybook/components@^8.0.0":
   version "8.4.2"
@@ -945,6 +940,13 @@
   dependencies:
     unplugin "^1.3.1"
 
+"@storybook/csf-plugin@8.4.2":
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/@storybook/csf-plugin/-/csf-plugin-8.4.2.tgz#3d098179c6ece8f4a053fdb258981cc6b467a1cb"
+  integrity sha512-1f0t6W5xbC1sSAHHs3uXYPIQs2NXAEtIGqn6X9i3xbbub6hDS8PF8BIm7dOjQ8dZOPp7d9ltR64V5CoLlsOigA==
+  dependencies:
+    unplugin "^1.3.1"
+
 "@storybook/csf@^0.1.11":
   version "0.1.11"
   resolved "https://registry.npmjs.org/@storybook/csf/-/csf-0.1.11.tgz"
@@ -970,20 +972,10 @@
     "@storybook/global" "^5.0.0"
     "@vitest/utils" "^2.1.1"
 
-"@storybook/manager-api@8.4.1":
-  version "8.4.1"
-  resolved "https://registry.npmjs.org/@storybook/manager-api/-/manager-api-8.4.1.tgz"
-  integrity sha512-7hb2k4zsp6lREGZbQ85QOlsC8EIMZXuY9Pg12VUgaZd+LmLjLuaqtrxRz3SwIgIWsRpFun9AHO0X37DmYNGTSw==
-
 "@storybook/manager-api@8.4.2", "@storybook/manager-api@^8.0.0":
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/@storybook/manager-api/-/manager-api-8.4.2.tgz#6bf972accfa6339034b50a7338654ad433aac6d1"
   integrity sha512-rhPc4cgQDKDH8NUyRh/ZaJW7QIhR/PO5MNX4xc+vz71sM2nO7ONA/FrgLtCuu4SULdwilEPvGefYvLK0dE+Caw==
-
-"@storybook/preview-api@8.4.1":
-  version "8.4.1"
-  resolved "https://registry.npmjs.org/@storybook/preview-api/-/preview-api-8.4.1.tgz"
-  integrity sha512-VdnESYfXCUasNtMd5s1Q8DPqMnAUdpROn8mE8UAD79Cy7DSNesI1q0SATuJqh5iYCT/+3Tpjfghsr2zC/mOh8w==
 
 "@storybook/preview-api@8.4.2":
   version "8.4.2"
@@ -1000,34 +992,22 @@
   resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-8.4.2.tgz#cefc4b2cb7d3f632492867a3d5edbf568418c66a"
   integrity sha512-FZVTM1f34FpGnf6e3MDIKkz05gmn8H9wEccvQAgr8pEFe8VWfrpVWeUrmatSAfgrCMNXYC1avDend8UX6IM8Fg==
 
-"@storybook/react-vite@^8.3.5":
-  version "8.4.1"
-  resolved "https://registry.npmjs.org/@storybook/react-vite/-/react-vite-8.4.1.tgz"
-  integrity sha512-khMEfB/fs4eryu0Swnqj3XUnmUW+1cAORa2gBcnkp51uX93cx5+t6UJIquW5ELB45+tGM5wIW2vVUDE0BOl4eA==
+"@storybook/react-vite@^8.4.2":
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/@storybook/react-vite/-/react-vite-8.4.2.tgz#ddc9c52d9f629db896910768be8ec48c16ab616a"
+  integrity sha512-OoXaW/V1AqLggMyniRcnuwmqQ1/OtSn38t31lePX4nDDeJhbGT3ZPldRrwvsLb0EaD3N27uoL+QbAOgsYJIhwA==
   dependencies:
     "@joshwooding/vite-plugin-react-docgen-typescript" "0.3.0"
     "@rollup/pluginutils" "^5.0.2"
-    "@storybook/builder-vite" "8.4.1"
-    "@storybook/react" "8.4.1"
+    "@storybook/builder-vite" "8.4.2"
+    "@storybook/react" "8.4.2"
     find-up "^5.0.0"
     magic-string "^0.30.0"
     react-docgen "^7.0.0"
     resolve "^1.22.8"
     tsconfig-paths "^4.2.0"
 
-"@storybook/react@8.4.1":
-  version "8.4.1"
-  resolved "https://registry.npmjs.org/@storybook/react/-/react-8.4.1.tgz"
-  integrity sha512-ZwszrzV47nWQEZ0X4LyNgv5OFq4iy/7LpmxW6IncIO7PWm70OWG2BVtKFNsNQx0LY+hOtllWZbvg06mPQzahFA==
-  dependencies:
-    "@storybook/components" "8.4.1"
-    "@storybook/global" "^5.0.0"
-    "@storybook/manager-api" "8.4.1"
-    "@storybook/preview-api" "8.4.1"
-    "@storybook/react-dom-shim" "8.4.1"
-    "@storybook/theming" "8.4.1"
-
-"@storybook/react@^8.4.2":
+"@storybook/react@8.4.2", "@storybook/react@^8.4.2":
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-8.4.2.tgz#a8d61902e0b72e99e96dfde4251eb0ce79249905"
   integrity sha512-rO5/aVKBVhIKENcL7G8ud4QKC5OyWBPCkJIvY6XUHIuhErJy9/4pP+sZ85jypVwx5kq+EqCPF8AEOWjIxB/4/Q==
@@ -1061,11 +1041,6 @@
     "@testing-library/dom" "^9.0.0"
     "@testing-library/user-event" "^14.4.0"
     ts-dedent "^2.2.0"
-
-"@storybook/theming@8.4.1":
-  version "8.4.1"
-  resolved "https://registry.npmjs.org/@storybook/theming/-/theming-8.4.1.tgz"
-  integrity sha512-Sz24isryVFZaVahXkjgnCsMAQqQeeKg41AtLsldlYdesIo6fr5tc6/SkTUy+CYadK4Dkhqp+vVRDnwToYYRGhA==
 
 "@storybook/theming@8.4.2", "@storybook/theming@^8.0.0":
   version "8.4.2"
