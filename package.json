@@ -27,7 +27,7 @@
     "@mantine/modals": "^7.12.2",
     "@reduxjs/toolkit": "^2.5.1",
     "@tabler/icons-react": "^3.30.0",
-    "axios": "^1.7.9",
+    "axios": "^1.8.1",
     "dayjs": "^1.11.10",
     "i18next": "^24.2.2",
     "lodash": "^4.17.21",
