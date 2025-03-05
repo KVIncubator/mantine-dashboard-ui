@@ -948,14 +948,14 @@
   dependencies:
     "@storybook/global" "^5.0.0"
 
-"@storybook/addon-interactions@^8.5.5":
-  version "8.5.5"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-8.5.5.tgz#2d363b079ea1a1ea50685dc3dc2bf3090fc4ceb6"
-  integrity sha512-/wu1GjuDMIT3FbASgIhlLk2jmQSqAYap0FwTNwnLRazKolvdpoGlSHDpDe8x7mABXzNIkbwrRi0A7R0K7nawnA==
+"@storybook/addon-interactions@^8.6.3":
+  version "8.6.3"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-8.6.3.tgz#18538b90d89a04235a73b0a2be8d103445da34cc"
+  integrity sha512-cDvxuMcjoQdtimNrT4BM9AK0qZJhA0Ep/CWPcVK1bAFzqlzBbe//UZa5It/AeC4EMYAr5rFY+LWEli3YPeOnjQ==
   dependencies:
     "@storybook/global" "^5.0.0"
-    "@storybook/instrumenter" "8.5.5"
-    "@storybook/test" "8.5.5"
+    "@storybook/instrumenter" "8.6.3"
+    "@storybook/test" "8.6.3"
     polished "^4.2.2"
     ts-dedent "^2.2.0"
 
@@ -1084,10 +1084,10 @@
   resolved "https://registry.npmjs.org/@storybook/icons/-/icons-1.2.12.tgz"
   integrity sha512-UxgyK5W3/UV4VrI3dl6ajGfHM4aOqMAkFLWe2KibeQudLf6NJpDrDMSHwZj+3iKC4jFU7dkKbbtH2h/al4sW3Q==
 
-"@storybook/instrumenter@8.5.5":
-  version "8.5.5"
-  resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-8.5.5.tgz#914b9b94b5bbb5b29b6810906a3227a2f3c12794"
-  integrity sha512-t4PlhgMTAFt/vSoqaydtATlcKJTEypxGnwlzx4lg5snrzmhYrtDUXTD/t25rrC0EjbEf412mlSS9BYRaogBAbg==
+"@storybook/instrumenter@8.6.3":
+  version "8.6.3"
+  resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-8.6.3.tgz#bd0dab35ac3fdfe8dc4626ef2fb0e17946d6aba3"
+  integrity sha512-Y5n6JWCWdOqok08Hgklsc98TBoqROhAhBRSzNWuIaLsRhz8EziXQtuEkWqmVbyYOys25iTZiK3S8+QQkOzGrBw==
   dependencies:
     "@storybook/global" "^5.0.0"
     "@vitest/utils" "^2.1.1"
@@ -1116,11 +1116,6 @@
   version "8.5.3"
   resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-8.5.3.tgz#422d6437872c69dda482016a06cad18f42325992"
   integrity sha512-kNIGk6mpXW3Wy+uS9pH9b9w/54EPJnH+QXA6MX4EQgmxhMQlGlS/l/YZp+3jsVQW4YgTmqe740qB+ccJAKZxBQ==
-
-"@storybook/react-dom-shim@8.5.5":
-  version "8.5.5"
-  resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-8.5.5.tgz#9d7a66468411296a740811f8e62e4801cc00e333"
-  integrity sha512-K4fR61jS9WJqXmrfczS1S7ukJjQw5vjTnxCJbqVpkpW9b5J0KpZr1aM6rvFLH6bNZPWefSRlRHeosaj5ro95IQ==
 
 "@storybook/react-dom-shim@8.6.3":
   version "8.6.3"
@@ -1166,14 +1161,13 @@
     "@storybook/react-dom-shim" "8.6.3"
     "@storybook/theming" "8.6.3"
 
-"@storybook/test@8.5.5":
-  version "8.5.5"
-  resolved "https://registry.yarnpkg.com/@storybook/test/-/test-8.5.5.tgz#c5fd97e741699449e6ba58d8d30cae8afc543276"
-  integrity sha512-8hVvT+TopKmh9iKZdTHmMz4kelz+gKwjCquw59ynoZBZ4saJdEdqmIaoPaFPAJukuGAP7qQKO6AnYFsufNw4gw==
+"@storybook/test@8.6.3":
+  version "8.6.3"
+  resolved "https://registry.yarnpkg.com/@storybook/test/-/test-8.6.3.tgz#bff2d4e058e7385de3f7f8310dd79e39d968183b"
+  integrity sha512-UimvhV/PmYoXCwIbGpkyqQfMhjdH2GaHJbV6BWr7M7BHA3kUS6zYJAm2V2CC5SYcmyj7FejLB4tgL7FmLXB6hA==
   dependencies:
-    "@storybook/csf" "0.1.12"
     "@storybook/global" "^5.0.0"
-    "@storybook/instrumenter" "8.5.5"
+    "@storybook/instrumenter" "8.6.3"
     "@testing-library/dom" "10.4.0"
     "@testing-library/jest-dom" "6.5.0"
     "@testing-library/user-event" "14.5.2"
