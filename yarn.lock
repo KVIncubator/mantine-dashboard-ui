@@ -1003,12 +1003,11 @@
     "@storybook/icons" "^1.2.12"
     ts-dedent "^2.0.0"
 
-"@storybook/blocks@^8.5.5":
-  version "8.5.5"
-  resolved "https://registry.yarnpkg.com/@storybook/blocks/-/blocks-8.5.5.tgz#72e5dcd4c1359bc91ad48c3f5f4c55b66b630943"
-  integrity sha512-O/59Dj2E4t3QtJkUyRgO0X4anAC5dx0M0gfsYACEUWFubhog9x5gw3xgPhFtc1UhezKBedM1nguqdPXHus1mTg==
+"@storybook/blocks@^8.6.3":
+  version "8.6.4"
+  resolved "https://registry.yarnpkg.com/@storybook/blocks/-/blocks-8.6.4.tgz#01fe3656756869230b5c612a2a25bdef921853be"
+  integrity sha512-+oPXwT3KzJzsdkQuGEzBqOKTIFlb6qmlCWWbDwAnP0SEqYHoTVRTAIa44icFP0EZeIe+ypFVAm1E7kWTLmw1hQ==
   dependencies:
-    "@storybook/csf" "0.1.12"
     "@storybook/icons" "^1.2.12"
     ts-dedent "^2.0.0"
 
@@ -1116,11 +1115,6 @@
   version "8.5.3"
   resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-8.5.3.tgz#422d6437872c69dda482016a06cad18f42325992"
   integrity sha512-kNIGk6mpXW3Wy+uS9pH9b9w/54EPJnH+QXA6MX4EQgmxhMQlGlS/l/YZp+3jsVQW4YgTmqe740qB+ccJAKZxBQ==
-
-"@storybook/react-dom-shim@8.5.5":
-  version "8.5.5"
-  resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-8.5.5.tgz#9d7a66468411296a740811f8e62e4801cc00e333"
-  integrity sha512-K4fR61jS9WJqXmrfczS1S7ukJjQw5vjTnxCJbqVpkpW9b5J0KpZr1aM6rvFLH6bNZPWefSRlRHeosaj5ro95IQ==
 
 "@storybook/react-dom-shim@8.6.3":
   version "8.6.3"
