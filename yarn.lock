@@ -713,10 +713,10 @@
   dependencies:
     clsx "^2.1.1"
 
-"@mantine/form@^7.17.0":
-  version "7.17.0"
-  resolved "https://registry.yarnpkg.com/@mantine/form/-/form-7.17.0.tgz#1129add79531d98b85ea98145caacc9a52e0f12d"
-  integrity sha512-LONdeb+wL8h9fvyQ339ZFLxqrvYff+b+H+kginZhnr45OBTZDLXNVAt/YoKVFEkynF9WDJjdBVrXKcOZvPgmrA==
+"@mantine/form@^7.17.1":
+  version "7.17.1"
+  resolved "https://registry.yarnpkg.com/@mantine/form/-/form-7.17.1.tgz#667bb4c121eb24ac6117028abfb5aaf2962c9342"
+  integrity sha512-IGZEzf/UUawIFYpLDI/F0oIkDImleaRzppkFqpTih4iBanlMIrguHOozm399xUK7+cTlQqWypd7vGVgBPTBnwQ==
   dependencies:
     fast-deep-equal "^3.1.3"
     klona "^2.0.6"
